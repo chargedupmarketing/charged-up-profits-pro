@@ -142,8 +142,8 @@ python src/ml_filter.py eval
 
 | Item | Cost |
 |---|---|
-| Tradovate Monthly Plan | $99 |
-| Tradovate API add-on | $29.99 |
+| Top Step Funded Account | $49 |
+| Top Step API add-on | $29.99 |
 | CME data (ES + NQ) | ~$12 |
 | VPS (optional) | $20–$40 |
 | **Total** | **~$160–$180/mo** |
