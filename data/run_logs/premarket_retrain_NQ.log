@@ -1,0 +1,162 @@
+
+ML_ALL_PROGRESS 1/1 (NQ)
+
+============================================================
+  Retraining ML model for NQ
+============================================================
+
+2026-02-24 07:50:26.853 | INFO     | __main__:main:1034 - Loaded 155 trades from C:\Apps\trading_bot\data\backtest_NQ_2020-01-01_2025-12-31.csv
+2026-02-24 07:50:26.948 | INFO     | __main__:main:1034 - Loaded 809 trades from C:\Apps\trading_bot\data\backtest_NQ_2020-01-01_2026-02-21.csv
+2026-02-24 07:50:26.970 | INFO     | __main__:main:1034 - Loaded 89 trades from C:\Apps\trading_bot\data\backtest_NQ_2020-01-03_2025-12-31.csv
+2026-02-24 07:50:27.060 | INFO     | __main__:main:1034 - Loaded 556 trades from C:\Apps\trading_bot\data\backtest_NQ_20200101_20251231.csv
+2026-02-24 07:50:27.149 | INFO     | __main__:main:1034 - Loaded 130 trades from C:\Apps\trading_bot\data\backtest_NQ_2022-01-03_2024-12-31.csv
+2026-02-24 07:50:27.164 | INFO     | __main__:main:1034 - Loaded 171 trades from C:\Apps\trading_bot\data\backtest_NQ_2022-01-03_2025-12-31.csv
+2026-02-24 07:50:27.259 | INFO     | __main__:main:1034 - Loaded 142 trades from C:\Apps\trading_bot\data\backtest_NQ_20240101_20251231.csv
+2026-02-24 07:50:27.270 | INFO     | __main__:main:1034 - Loaded 75 trades from C:\Apps\trading_bot\data\wfa_trades_NQ.csv
+2026-02-24 07:50:27.272 | INFO     | __main__:main:1043 - Total: 2127 trades from 8 files
+2026-02-24 07:50:27.273 | INFO     | __main__:main:1048 - Trades with features_json: 2127/2127 (100%)
+
+=== Step 1/3: Labelling trades ===
+2026-02-24 07:50:27.663 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:27.664 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:28.063 | INFO     | __main__:main:1131 - Labels: 1211 positive (TP), 916 negative (SL/EOD) → saved to C:\Apps\trading_bot\data\labelled_trades.csv
+
+=== Step 2/3: Training ensemble models (combined + per-setup-type) ===
+2026-02-24 07:50:28.269 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:28.269 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:28.767 | INFO     | __main__:prepare_dataset:591 - Dataset (combined): 2127 samples, 57 features, 56.9% positive labels
+  Training combined model (2127 samples)...
+2026-02-24 07:50:42.163 | INFO     | __main__:train:629 - LightGBM not installed — XGBoost only. pip install lightgbm
+2026-02-24 07:50:42.180 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 1: all training samples purged — skipping fold
+2026-02-24 07:50:42.180 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 2: all training samples purged — skipping fold
+2026-02-24 07:50:42.181 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 3: all training samples purged — skipping fold
+2026-02-24 07:50:42.181 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 4: all training samples purged — skipping fold
+2026-02-24 07:50:42.181 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 5: all training samples purged — skipping fold
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:42] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:44.057 | INFO     | __main__:train:728 - Isotonic calibrator fitted on 425 holdout samples
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:44] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:46.066 | INFO     | __main__:train:737 - XGBoost model saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ.pkl
+2026-02-24 07:50:46.066 | INFO     | __main__:train:757 - Calibrator saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_COMBINED.CALIBRATOR.pkl
+2026-02-24 07:50:46.252 | INFO     | __main__:train:786 - EV policy from training data: avg_R_win=1.680  avg_R_loss=-0.582  (n_wins=1211 n_losses=916)
+2026-02-24 07:50:46.254 | INFO     | __main__:_save_manifest:149 - Manifest saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_manifest.json
+  Combined model: AUC=0.000  marginal
+2026-02-24 07:50:46.558 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:46.559 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:46.560 | INFO     | __main__:prepare_dataset:530 - Filtering dataset to setup_type=BREAK_RETEST: 1369 / 2127 trades
+2026-02-24 07:50:47.055 | INFO     | __main__:prepare_dataset:591 - Dataset (BREAK_RETEST): 1369 samples, 57 features, 58.9% positive labels
+  Training BREAK_RETEST specialist (1369 samples)...
+2026-02-24 07:50:47.056 | INFO     | __main__:train:629 - LightGBM not installed — XGBoost only. pip install lightgbm
+2026-02-24 07:50:47.058 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 1: all training samples purged — skipping fold
+2026-02-24 07:50:47.058 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 2: all training samples purged — skipping fold
+2026-02-24 07:50:47.059 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 3: all training samples purged — skipping fold
+2026-02-24 07:50:47.059 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 4: all training samples purged — skipping fold
+2026-02-24 07:50:47.059 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 5: all training samples purged — skipping fold
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:47] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:48.866 | INFO     | __main__:train:728 - Isotonic calibrator fitted on 273 holdout samples
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:48] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:51.051 | INFO     | __main__:train:737 - XGBoost model saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BREAK_RETEST.pkl
+2026-02-24 07:50:51.051 | INFO     | __main__:train:757 - Calibrator saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BREAK_RETEST.CALIBRATOR.pkl
+2026-02-24 07:50:51.163 | INFO     | __main__:train:786 - EV policy from training data: avg_R_win=1.686  avg_R_loss=-0.642  (n_wins=716 n_losses=653)
+2026-02-24 07:50:51.165 | INFO     | __main__:_save_manifest:149 - Manifest saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BREAK_RETEST_manifest.json
+    BREAK_RETEST: AUC=0.000  marginal
+2026-02-24 07:50:51.457 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:51.458 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:51.459 | INFO     | __main__:prepare_dataset:530 - Filtering dataset to setup_type=REJECTION: 0 / 2127 trades
+2026-02-24 07:50:51.460 | DEBUG    | __main__:prepare_dataset:544 - Not enough trades for setup_type=REJECTION: 0 rows — returning empty dataset
+  REJECTION: only 0 samples — skipping specialist model
+2026-02-24 07:50:51.852 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:51.852 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:51.866 | INFO     | __main__:prepare_dataset:530 - Filtering dataset to setup_type=BOUNCE: 25 / 2127 trades
+2026-02-24 07:50:51.955 | INFO     | __main__:prepare_dataset:591 - Dataset (BOUNCE): 25 samples, 57 features, 48.0% positive labels
+  Training BOUNCE specialist (25 samples)...
+2026-02-24 07:50:51.956 | INFO     | __main__:train:629 - LightGBM not installed — XGBoost only. pip install lightgbm
+2026-02-24 07:50:51.957 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 1: all training samples purged — skipping fold
+2026-02-24 07:50:51.957 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 2: all training samples purged — skipping fold
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:52.363 | INFO     | __main__:train:728 - Isotonic calibrator fitted on 20 holdout samples
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:52.656 | INFO     | __main__:train:737 - XGBoost model saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BOUNCE.pkl
+2026-02-24 07:50:52.656 | INFO     | __main__:train:757 - Calibrator saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BOUNCE.CALIBRATOR.pkl
+2026-02-24 07:50:52.854 | INFO     | __main__:train:786 - EV policy from training data: avg_R_win=2.159  avg_R_loss=-0.750  (n_wins=25 n_losses=0)
+2026-02-24 07:50:52.856 | INFO     | __main__:_save_manifest:149 - Manifest saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_BOUNCE_manifest.json
+    BOUNCE: AUC=0.000  marginal
+2026-02-24 07:50:53.260 | DEBUG    | src.labeling.labeler:from_trade_log:171 - realized_R recomputed from raw columns
+2026-02-24 07:50:53.261 | INFO     | src.labeling.labeler:from_trade_log:199 - Labeling (realized_R_binary): 1211 positive / 916 negative  imbalance=56.9%
+2026-02-24 07:50:53.263 | INFO     | __main__:prepare_dataset:530 - Filtering dataset to setup_type=SWEEP_REVERSE: 733 / 2127 trades
+2026-02-24 07:50:53.558 | INFO     | __main__:prepare_dataset:591 - Dataset (SWEEP_REVERSE): 733 samples, 57 features, 53.5% positive labels
+  Training SWEEP_REVERSE specialist (733 samples)...
+2026-02-24 07:50:53.559 | INFO     | __main__:train:629 - LightGBM not installed — XGBoost only. pip install lightgbm
+2026-02-24 07:50:53.560 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 1: all training samples purged — skipping fold
+2026-02-24 07:50:53.560 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 2: all training samples purged — skipping fold
+2026-02-24 07:50:53.561 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 3: all training samples purged — skipping fold
+2026-02-24 07:50:53.561 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 4: all training samples purged — skipping fold
+2026-02-24 07:50:53.561 | WARNING  | src.cv.purged_time_series_split:split:150 - Fold 5: all training samples purged — skipping fold
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:53] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:54.856 | INFO     | __main__:train:728 - Isotonic calibrator fitted on 146 holdout samples
+C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\training.py:200: UserWarning: [07:50:54] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+2026-02-24 07:50:57.154 | INFO     | __main__:train:737 - XGBoost model saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_SWEEP_REVERSE.pkl
+2026-02-24 07:50:57.157 | INFO     | __main__:train:757 - Calibrator saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_SWEEP_REVERSE.CALIBRATOR.pkl
+2026-02-24 07:50:57.253 | INFO     | __main__:train:786 - EV policy from training data: avg_R_win=1.743  avg_R_loss=-0.647  (n_wins=394 n_losses=339)
+2026-02-24 07:50:57.255 | INFO     | __main__:_save_manifest:149 - Manifest saved: C:\Apps\trading_bot\data\models\active\ml_filter_NQ_SWEEP_REVERSE_manifest.json
+    SWEEP_REVERSE: AUC=0.000  marginal
+
+=== Step 3/3: Evaluating combined filter performance ===
+Traceback (most recent call last):
+  File "C:\Apps\trading_bot\src\ml_filter.py", line 1191, in <module>
+    main()
+  File "C:\Apps\trading_bot\src\ml_filter.py", line 1168, in main
+    eval_metrics = ml.evaluate_filtering(X, y, trades_df)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\src\ml_filter.py", line 872, in evaluate_filtering
+    probs = self._model.predict_proba(X)[:, 1]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\sklearn.py", line 1921, in predict_proba
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\core.py", line 2854, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\xgboost\core.py", line 3429, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['range_pts', 'range_norm', 'price_vs_mid_norm', 'price_above_mid', 'or_range_vs_5day_avg', 'level_dist_pts', 'level_is_high', 'level_origin_asia', 'level_origin_london', 'active_highs_count', 'active_lows_count', 'level_freshness_bars', 'level_test_count', 'volume_ratio', 'volume_above_median', 'volume_trend_5', 'price_vs_ema20', 'price_above_ema20', 'atr_15m_14', 'momentum_3bar_norm', 'return_5bar_1m', 'daily_ema50_distance', 'price_above_ema50', 'hour', 'minute_of_day', 'day_of_week', 'mins_since_exec_open', 'bars_in_exec_window', 'setup_break_retest', 'setup_rejection', 'setup_bounce', 'direction_long', 'stop_dist_pts', 'target_dist_pts', 'rr_ratio', 'candle_body_ratio', 'atr_regime', 'spread_proxy', 'prev_bar_momentum', 'prev_bar_bullish', 'or_range_vs_atr', 'break_excursion_pts', 'closes_beyond_level', 'time_to_retest_bars', 'momentum_aligned', 'ema50_aligned', 'is_retest_quick', 'gap_size_norm', 'session_phase', 'vwap_distance_norm', 'price_above_vwap', 'price_vs_prev_high_norm', 'price_vs_prev_low_norm', 'above_prev_high', 'below_prev_low', 'efficiency_ratio', 'vol_state'] ['range_pts', 'range_norm', 'price_vs_mid_norm', 'price_above_mid', 'or_range_vs_5day_avg', 'level_dist_pts', 'level_is_high', 'level_origin_asia', 'level_origin_london', 'active_highs_count', 'active_lows_count', 'level_freshness_bars', 'level_test_count', 'volume_ratio', 'volume_above_median', 'volume_trend_5', 'price_vs_ema20', 'price_above_ema20', 'atr_15m_14', 'momentum_3bar_norm', 'return_5bar_1m', 'daily_ema50_distance', 'price_above_ema50', 'hour', 'minute_of_day', 'day_of_week', 'mins_since_exec_open', 'bars_in_exec_window', 'setup_break_retest', 'setup_rejection', 'setup_bounce', 'direction_long', 'stop_dist_pts', 'target_dist_pts', 'rr_ratio', 'candle_body_ratio', 'atr_regime', 'spread_proxy', 'prev_bar_momentum', 'prev_bar_bullish', 'or_range_vs_atr', 'break_excursion_pts', 'closes_beyond_level', 'time_to_retest_bars', 'momentum_aligned', 'ema50_aligned', 'is_retest_quick', 'gap_size_norm', 'session_phase', 'vwap_distance_norm', 'price_above_vwap', 'price_vs_prev_high_norm', 'price_vs_prev_low_norm', 'above_prev_high', 'below_prev_low', 'efficiency_ratio', 'vol_state', 'realized_R']
+training data did not have the following fields: realized_R
+
+[ml_retrain_all] NQ finished -- exit 1
+
+============================================================
+  ALL ML RETRAINS COMPLETE
+============================================================
+    NQ: FAIL (exit 1)
+ML_ALL_DONE

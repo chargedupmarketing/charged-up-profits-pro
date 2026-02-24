@@ -1,0 +1,59 @@
+# Core data & numerics
+pandas>=2.2.0
+numpy>=1.26.0
+pytz>=2024.1
+
+# Market data (historical downloads)
+databento>=0.41.0
+pandas-market-calendars>=4.4.0
+
+# Broker execution — TopstepX (ProjectX platform)
+# Windows note: project-x-py requires uvloop which is Linux-only.
+# Install with the workaround documented in VPS_SETUP.md Step 6:
+#   pip install "msgpack>=1.0.0"
+#   pip install project-x-py --no-deps
+#   pip install "httpx[http2]>=0.27.0" "orjson>=3.11.1" "polars>=1.31.0" \
+#               "pydantic>=2.11.7" "rich>=14.0.0" "lz4>=4.0.0" \
+#               "deprecated>=1.2.18" "cachetools>=5.0.0" "signalrcore>=0.9.5"
+project-x-py>=3.5.9        # TopstepX REST + SignalR WebSocket SDK
+httpx[http2]>=0.27.0       # Async HTTP client (used by project-x-py)
+orjson>=3.11.1             # Fast JSON (used by project-x-py)
+polars>=1.31.0             # Fast DataFrame (used by project-x-py for bar data)
+pydantic>=2.11.7           # Data validation (used by project-x-py)
+signalrcore>=0.9.5         # SignalR WebSocket client for real-time data
+lz4>=4.0.0                 # Compression (used by project-x-py)
+deprecated>=1.2.18         # Deprecation decorator (used by project-x-py)
+cachetools>=5.0.0          # In-memory caching (used by project-x-py)
+
+# HTTP utilities (webhook alerts, etc.)
+requests>=2.31.0
+
+# Database / audit log
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Backtesting
+vectorbt>=0.26.2
+
+# ML filter (Phase 2/3)
+xgboost>=2.0.0
+scikit-learn>=1.4.0
+imbalanced-learn>=0.12.0
+shap>=0.45.0               # SHAP explainability for ML filter (Phase 3c)
+
+# Dashboard
+streamlit>=1.35.0
+plotly>=5.22.0
+psutil>=5.9.0                # Process management for dashboard bot start/stop
+
+# Strategy research tools
+youtube-transcript-api>=0.6.0  # Download YouTube transcripts for strategy research
+
+# Scheduling & utilities
+apscheduler>=3.10.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+loguru>=0.7.2
+
+# Alerting
+requests>=2.31.0  # used for webhook alerts (Telegram/Discord)

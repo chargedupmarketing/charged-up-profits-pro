@@ -1,0 +1,50 @@
+{
+  "symbol": "ES",
+  "running": false,
+  "pid": 11204,
+  "paper_mode": false,
+  "date": "2026-02-24",
+  "today_pnl": 0,
+  "today_trades": 0,
+  "today_wins": 0,
+  "today_losses": 0,
+  "today_win_rate": 0.0,
+  "open_position": false,
+  "kill_switch_active": false,
+  "kill_switch_reason": "none",
+  "levels_built": true,
+  "premarket": {
+    "date": "2026-02-24",
+    "symbol": "ES",
+    "news_day": false,
+    "day_type": "GAP_DOWN",
+    "gap_direction": "DOWN",
+    "gap_size_atr": 0.99,
+    "overnight_range_atr": 3.65,
+    "vol_regime": "HIGH",
+    "atr_ratio": 1.94,
+    "current_atr": 15.14,
+    "level_quality": "NO_TRADE",
+    "level_count": 0,
+    "session_outlook": "NO_TRADE",
+    "session_notes": [
+      "\ud83d\udd34 NO-TRADE today \u2014 bot will not place orders",
+      "\u26a1 High volatility: ATR is 1.9\u00d7 its 20-day avg \u2014 sizing will be reduced",
+      "\ud83d\udcc9 Gap DOWN: -15.0pts below prior close (1.0\u00d7 ATR) \u2014 watch for gap fill",
+      "\ud83c\udf19 Wide overnight range: 55.2pts (3.6\u00d7 ATR) \u2014 choppy overnight",
+      "\ud83d\udeab No-trade day: anchor candle outside valid range"
+    ],
+    "learner_retrain": "RUNNING (pid=7104)",
+    "timestamp": "2026-02-24T07:49:57.362060"
+  },
+  "account": {
+    "account": "",
+    "balance": 0.0,
+    "daily_pnl": 0.0,
+    "daily_remaining": 2000.0,
+    "drawdown_remaining": 3000.0,
+    "safe": true,
+    "contracts": 1
+  },
+  "last_update": "2026-02-24T07:56:00.752387"
+}

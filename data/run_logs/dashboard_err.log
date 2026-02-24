@@ -1,0 +1,305 @@
+[32m2026-02-23 08:24:56.598[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:24:57.288[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:24:57.418[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:33.797[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:33.983[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:34.087[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:42.194[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:42.288[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:25:42.303[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:03.990[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:04.006[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:04.092[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:38.400[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:38.494[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:26:38.593[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:27:33.991[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:27:34.092[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:27:34.189[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:14.787[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:14.801[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:14.891[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:50.897[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:51.088[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:28:51.194[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:29:25.917[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:29:26.088[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:29:26.108[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:01.400[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:01.495[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:01.586[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:35.214[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:35.299[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:30:35.314[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:07.506[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:07.602[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:07.786[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:53.494[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:53.586[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:31:53.602[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:27.602[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:27.684[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:27.716[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:51.621[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:51.685[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:32:51.700[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:24.104[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:24.122[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:24.138[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:43.687[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:43.702[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:43.784[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:14.900[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:15.002[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:15.098[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:50.657[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:50.696[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:34:50.711[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:15.725[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:15.741[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:15.755[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:44.003[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:44.097[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:35:44.199[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:08.685[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:08.701[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:08.717[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:42.486[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:42.504[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:36:42.591[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:00.449[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:00.464[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:00.477[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:28.197[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:28.291[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:28.387[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:56.400[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:56.586[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:37:56.684[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:18.107[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:18.122[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:18.137[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:44.987[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:45.005[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:38:45.087[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:15.998[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:16.086[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:16.105[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:40.933[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:40.947[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:39:40.985[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:02.919[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:02.989[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:03.005[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:26.410[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:26.425[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:26.489[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:40:38.409[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:15.033[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:15.049[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:15.063[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:27.638[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:30.202[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:30.219[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:30.232[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:47.237[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:48.392[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:48.409[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:52.068[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:52.082[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:41:52.098[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:42:16.999[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:42:17.016[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:42:17.033[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:01.145[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:01.168[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:01.184[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:04.126[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:04.192[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:44:04.206[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:45:09.902[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:45:10.012[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:45:10.102[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:48:55.561[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:48:55.576[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:48:55.592[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:52:30.519[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:52:30.599[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:52:30.614[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:00:41.443[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:00:41.498[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:00:41.512[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:00:51.521[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:07:15.386[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:07:15.487[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:07:15.589[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:13.390[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:13.406[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:13.487[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:16.798[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:16.891[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:16.907[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+C:\Apps\trading_bot\monitoring\dashboard.py:1925: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  _perf_df[_perf_ts_col] = pd.to_datetime(_perf_df[_perf_ts_col], errors="coerce")
+2026-02-23 09:20:25.488 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:26.191 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:26.201 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:26.485 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:26.593 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[32m2026-02-23 09:20:38.195[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:38.695[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:38.885[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:42.788[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:42.886[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:20:42.984[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+C:\Apps\trading_bot\monitoring\dashboard.py:1925: FutureWarning:
+
+In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+
+2026-02-23 09:20:49.599 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:49.896 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:49.901 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:50.101 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:20:50.201 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[32m2026-02-23 09:21:04.494[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:21:04.510[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:21:04.596[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:21:07.308[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:21:07.695[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:21:07.893[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:22:16.704[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:22:16.800[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:22:16.900[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+C:\Apps\trading_bot\monitoring\dashboard.py:1925: FutureWarning:
+
+In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+
+2026-02-23 09:22:17.392 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:17.593 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:17.601 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:17.793 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:17.894 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[32m2026-02-23 09:22:21.295[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:22:21.388[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 09:22:21.482[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+C:\Apps\trading_bot\monitoring\dashboard.py:1925: FutureWarning:
+
+In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+
+2026-02-23 09:22:21.791 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:21.904 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:21.988 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:22.098 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 09:22:22.199 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[32m2026-02-23 10:05:02.658[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 10:05:02.674[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 10:05:02.693[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+C:\Apps\trading_bot\monitoring\dashboard.py:1925: FutureWarning:
+
+In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+
+2026-02-23 10:05:02.749 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 10:05:02.776 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 10:05:02.783 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 10:05:02.811 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-02-23 10:05:02.826 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.

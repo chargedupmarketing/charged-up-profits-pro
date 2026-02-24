@@ -1,0 +1,539 @@
+[32m2026-02-23 08:33:11.189[0m | [1mINFO    [0m | [36m__main__[0m:[36m__init__[0m:[36m189[0m - [1mMultiBotRunner: symbols=['ES', 'NQ'] sdk_symbols=['ES', 'NQ'] paper_mode=False[0m
+[32m2026-02-23 08:33:11.202[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m__init__[0m:[36m98[0m - [1mSymbol override applied: ES[0m
+[32m2026-02-23 08:33:11.214[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.302[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.399[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.400[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36m__init__[0m:[36m126[0m - [1mRiskManager initialised — max_daily_loss=-1200 max_trades=5 paper_mode=False account_manager=disabled[0m
+[32m2026-02-23 08:33:11.509[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:11.590[0m | [1mINFO    [0m | [36msrc.account_manager[0m:[36m__init__[0m:[36m159[0m - [1mAccountManager init — account_size=$50,000 daily_limit=$2,000 drawdown_limit=$3,000 paper_mode=False[0m
+[32m2026-02-23 08:33:11.592[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36mset_account_manager[0m:[36m153[0m - [1mRiskManager: AccountManager attached[0m
+[32m2026-02-23 08:33:11.593[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m__init__[0m:[36m139[0m - [1mBotRunner initialised — symbol=ES paper_mode=False[0m
+[32m2026-02-23 08:33:11.603[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m__init__[0m:[36m98[0m - [1mSymbol override applied: NQ[0m
+[32m2026-02-23 08:33:11.683[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.694[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.791[0m | [1mINFO    [0m | [36msrc.session_engine[0m:[36m__init__[0m:[36m95[0m - [1mSessionEngine initialised — timezone=America/New_York[0m
+[32m2026-02-23 08:33:11.792[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36m__init__[0m:[36m126[0m - [1mRiskManager initialised — max_daily_loss=-1200 max_trades=5 paper_mode=False account_manager=disabled[0m
+[32m2026-02-23 08:33:11.894[0m | [1mINFO    [0m | [36mmonitoring.audit_log[0m:[36m__init__[0m:[36m143[0m - [1mAuditLogger initialised — db=sqlite:///trading_bot/data/audit.db[0m
+[32m2026-02-23 08:33:11.984[0m | [1mINFO    [0m | [36msrc.account_manager[0m:[36m__init__[0m:[36m159[0m - [1mAccountManager init — account_size=$50,000 daily_limit=$2,000 drawdown_limit=$3,000 paper_mode=False[0m
+[32m2026-02-23 08:33:11.985[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36mset_account_manager[0m:[36m153[0m - [1mRiskManager: AccountManager attached[0m
+[32m2026-02-23 08:33:12.092[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m__init__[0m:[36m139[0m - [1mBotRunner initialised — symbol=NQ paper_mode=False[0m
+[32m2026-02-23 08:33:12.094[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m220[0m - [1mCreating shared TradingSuite for ['ES', 'NQ'][0m
+[32m2026-02-23 08:33:18.686[0m | [1mINFO    [0m | [36m__main__[0m:[36m_create_suite_and_start_loop[0m:[36m95[0m - [1mAttempt 1/4: Creating TradingSuite for ['ES', 'NQ'] ...[0m
+2026-02-23 08:33:31,381 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:31,381 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:31,387 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:31,387 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:31,390 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:31,390 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:31,391 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF553D0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:31,391 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF553D0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:31,395 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:31,395 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+❌ Market hub disconnected
+2026-02-23 08:33:31,581 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:31,581 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:31,593 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:31,593 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:31,596 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:31,596 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:31,597 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF553D0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:31,597 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF553D0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:31,598 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:31,598 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+❌ Market hub disconnected
+❌ User hub disconnected
+[32m2026-02-23 08:33:31.685[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36m_create_suite_and_start_loop[0m:[36m129[0m - [33m[1mAttempt 1/4: TradingSuite connection failed: Internal error: Realtime client not connected — retrying in 5s ...[0m
+[32m2026-02-23 08:33:36.686[0m | [1mINFO    [0m | [36m__main__[0m:[36m_create_suite_and_start_loop[0m:[36m95[0m - [1mAttempt 2/4: Creating TradingSuite for ['ES', 'NQ'] ...[0m
+2026-02-23 08:33:38,981 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,981 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,982 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:38,981 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,982 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:38,981 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,982 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:38,990 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:38,982 - SignalRCoreClient - WARNING - Connection closed Socket closed by the the server
+2026-02-23 08:33:38,990 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:38,990 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:38,990 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4089 (char 4088)
+
+2026-02-23 08:33:38,993 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,993 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,993 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,993 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4089 (char 4088)
+2026-02-23 08:33:38,995 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:38,995 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:38,995 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:38,995 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4089 (char 4088) <class 'json.decoder.JSONDecodeError'>
+❌ Market hub disconnected
+2026-02-23 08:33:39,208 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:39,208 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:39,208 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:39,208 - SignalRCoreClient - INFO - on_reconnect not defined
+2026-02-23 08:33:39,281 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,281 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,281 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,281 - SignalRCoreClient - ERROR - Receive error: Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,285 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:39,285 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:39,285 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:39,285 - SignalRCoreClient - ERROR - Traceback (most recent call last):
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\sockets\base_socket_client.py", line 168, in run
+    self.on_message(self, message)
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\transport\websockets\websocket_transport.py", line 88, in on_message
+    self.protocol.parse_messages(raw_message))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Apps\trading_bot\venv\Lib\site-packages\signalrcore\protocol\json_hub_protocol.py", line 48, in parse_messages
+    dict_message = json.loads(raw_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 4076 (char 4075)
+
+2026-02-23 08:33:39,287 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,287 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,287 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,287 - SignalRCoreClient - ERROR - <signalrcore.transport.websockets.websocket_transport.WebsocketTransport object at 0x000001D0DCF75BE0> Expecting value: line 1 column 4076 (char 4075)
+2026-02-23 08:33:39,289 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:39,289 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:39,289 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+2026-02-23 08:33:39,289 - SignalRCoreClient - ERROR - Expecting value: line 1 column 4076 (char 4075) <class 'json.decoder.JSONDecodeError'>
+❌ Market hub disconnected
+[32m2026-02-23 08:33:39.308[0m | [1mINFO    [0m | [36m__main__[0m:[36m_create_suite_and_start_loop[0m:[36m113[0m - [1mTradingSuite connected on attempt 2/4[0m
+[32m2026-02-23 08:33:39.309[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m222[0m - [1mShared TradingSuite ready — background loop running[0m
+[32m2026-02-23 08:33:39.310[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m231[0m - [1mInjected shared suite into ES engine (sdk_symbol=ES)[0m
+[32m2026-02-23 08:33:39.311[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m231[0m - [1mInjected shared suite into NQ engine (sdk_symbol=NQ)[0m
+[32m2026-02-23 08:33:39.598[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36mrun[0m:[36m154[0m - [1mStarting trading session for 2026-02-23 — symbol=NQ[0m
+[32m2026-02-23 08:33:39.609[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36mrun[0m:[36m154[0m - [1mStarting trading session for 2026-02-23 — symbol=ES[0m
+[32m2026-02-23 08:33:39.610[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36mnew_day[0m:[36m144[0m - [1mRiskManager: new trading day started — 2026-02-23[0m
+[32m2026-02-23 08:33:39.610[0m | [1mINFO    [0m | [36msrc.risk_manager[0m:[36mnew_day[0m:[36m144[0m - [1mRiskManager: new trading day started — 2026-02-23[0m
+[32m2026-02-23 08:33:39.693[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m556[0m - [1mUsing shared TradingSuite for symbol=NQ[0m
+[32m2026-02-23 08:33:39.694[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m597[0m - [1mConnected to TopstepX | account='50KTC-V2-527200-68043726 (id=19158041)' | symbol='NQ' | contract='CON.F.US.ENQ.H26'[0m
+[32m2026-02-23 08:33:39.706[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 10:34:00-06:00[0m
+[32m2026-02-23 08:33:39.804[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 10:45:00-06:00[0m
+[32m2026-02-23 08:33:39.900[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:00:00-06:00[0m
+[32m2026-02-23 08:33:40.000[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:15:00-06:00[0m
+[32m2026-02-23 08:33:40.090[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:30:00-06:00[0m
+[32m2026-02-23 08:33:40.192[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:45:00-06:00[0m
+[32m2026-02-23 08:33:40.296[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:00:00-06:00[0m
+[32m2026-02-23 08:33:40.494[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:15:00-06:00[0m
+[32m2026-02-23 08:33:40.598[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:30:00-06:00[0m
+[32m2026-02-23 08:33:40.802[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:45:00-06:00[0m
+[32m2026-02-23 08:33:40.911[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:00:00-06:00[0m
+[32m2026-02-23 08:33:41.087[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:15:00-06:00[0m
+[32m2026-02-23 08:33:41.192[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:30:00-06:00[0m
+[32m2026-02-23 08:33:41.302[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:45:00-06:00[0m
+[32m2026-02-23 08:33:41.484[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:00:00-06:00[0m
+[32m2026-02-23 08:33:41.595[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:15:00-06:00[0m
+[32m2026-02-23 08:33:41.708[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:30:00-06:00[0m
+[32m2026-02-23 08:33:41.900[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:45:00-06:00[0m
+Connection closed Socket closed by the the server
+[32m2026-02-23 08:33:42.094[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:00:00-06:00[0m
+[32m2026-02-23 08:33:42.299[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:15:00-06:00[0m
+[32m2026-02-23 08:33:42.498[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:30:00-06:00[0m
+[32m2026-02-23 08:33:42.691[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:45:00-06:00[0m
+[32m2026-02-23 08:33:42.999[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:00:00-06:00[0m
+[32m2026-02-23 08:33:43.198[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:15:00-06:00[0m
+[32m2026-02-23 08:33:43.315[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:30:00-06:00[0m
+[32m2026-02-23 08:33:43.485[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:45:00-06:00[0m
+[32m2026-02-23 08:33:43.607[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:00:00-06:00[0m
+[32m2026-02-23 08:33:43.804[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:15:00-06:00[0m
+[32m2026-02-23 08:33:44.010[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:30:00-06:00[0m
+[32m2026-02-23 08:33:44.292[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:45:00-06:00[0m
+[32m2026-02-23 08:33:44.587[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:00:00-06:00[0m
+[32m2026-02-23 08:33:44.994[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:15:00-06:00[0m
+[32m2026-02-23 08:33:45.300[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:30:00-06:00[0m
+[32m2026-02-23 08:33:45.687[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:45:00-06:00[0m
+[32m2026-02-23 08:33:45.986[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:00:00-06:00[0m
+[32m2026-02-23 08:33:46.208[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:15:00-06:00[0m
+[32m2026-02-23 08:33:46.598[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:30:00-06:00[0m
+[32m2026-02-23 08:33:47.185[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:45:00-06:00[0m
+[32m2026-02-23 08:33:47.585[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:00:00-06:00[0m
+[32m2026-02-23 08:33:47.903[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:15:00-06:00[0m
+[32m2026-02-23 08:33:48.301[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:30:00-06:00[0m
+[32m2026-02-23 08:33:48.605[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:45:00-06:00[0m
+[32m2026-02-23 08:33:48.989[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:00:00-06:00[0m
+[32m2026-02-23 08:33:49.397[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:15:00-06:00[0m
+Connection closed Socket closed by the the server
+[32m2026-02-23 08:33:49.883[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:30:00-06:00[0m
+[32m2026-02-23 08:33:50.202[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:45:00-06:00[0m
+[32m2026-02-23 08:33:50.889[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:00:00-06:00[0m
+[32m2026-02-23 08:33:51.786[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:15:00-06:00[0m
+[32m2026-02-23 08:33:52.116[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:30:00-06:00[0m
+[32m2026-02-23 08:33:52.403[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:45:00-06:00[0m
+[32m2026-02-23 08:33:52.783[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:00:00-06:00[0m
+[32m2026-02-23 08:33:53.191[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:15:00-06:00[0m
+[32m2026-02-23 08:33:53.993[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:30:00-06:00[0m
+[32m2026-02-23 08:33:54.297[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:45:00-06:00[0m
+[32m2026-02-23 08:33:54.704[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:00:00-06:00[0m
+[32m2026-02-23 08:33:55.099[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:15:00-06:00[0m
+[32m2026-02-23 08:33:55.497[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:30:00-06:00[0m
+[32m2026-02-23 08:33:55.988[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:45:00-06:00[0m
+[32m2026-02-23 08:33:56.994[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:00:00-06:00[0m
+[32m2026-02-23 08:33:57.601[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:15:00-06:00[0m
+[32m2026-02-23 08:33:58.384[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:30:00-06:00[0m
+[32m2026-02-23 08:33:58.893[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:45:00-06:00[0m
+[32m2026-02-23 08:33:59.497[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:00:00-06:00[0m
+[32m2026-02-23 08:34:00.006[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:15:00-06:00[0m
+[32m2026-02-23 08:34:00.703[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:30:00-06:00[0m
+[32m2026-02-23 08:34:01.399[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:45:00-06:00[0m
+[32m2026-02-23 08:34:01.787[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:00:00-06:00[0m
+[32m2026-02-23 08:34:02.102[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:15:00-06:00[0m
+[32m2026-02-23 08:34:02.402[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:30:00-06:00[0m
+[32m2026-02-23 08:34:02.719[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:45:00-06:00[0m
+[32m2026-02-23 08:34:03.019[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:00:00-06:00[0m
+[32m2026-02-23 08:34:03.406[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:15:00-06:00[0m
+[32m2026-02-23 08:34:04.018[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:30:00-06:00[0m
+[32m2026-02-23 08:34:04.506[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:45:00-06:00[0m
+[32m2026-02-23 08:34:04.989[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:00:00-06:00[0m
+[32m2026-02-23 08:34:05.788[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:15:00-06:00[0m
+[32m2026-02-23 08:34:06.389[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:30:00-06:00[0m
+[32m2026-02-23 08:34:07.090[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:45:00-06:00[0m
+[32m2026-02-23 08:34:07.898[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:00:00-06:00[0m
+[32m2026-02-23 08:34:08.695[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:15:00-06:00[0m
+[32m2026-02-23 08:34:09.398[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:30:00-06:00[0m
+[32m2026-02-23 08:34:10.287[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:45:00-06:00[0m
+[32m2026-02-23 08:34:10.896[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:00:00-06:00[0m
+[32m2026-02-23 08:34:11.507[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:15:00-06:00[0m
+[32m2026-02-23 08:34:12.196[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:30:00-06:00[0m
+[32m2026-02-23 08:34:12.704[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:45:00-06:00[0m
+[32m2026-02-23 08:34:13.697[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:00:00-06:00[0m
+[32m2026-02-23 08:34:14.110[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:15:00-06:00[0m
+[32m2026-02-23 08:34:14.801[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:30:00-06:00[0m
+[32m2026-02-23 08:34:15.702[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:45:00-06:00[0m
+[32m2026-02-23 08:34:16.498[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 10:00:00-06:00[0m
+[32m2026-02-23 08:34:17.399[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 10:15:00-06:00[0m
+[32m2026-02-23 08:34:17.796[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m622[0m - [1mSeeded bar store with 1380 historical 1m bars[0m
+[32m2026-02-23 08:34:17.797[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m629[0m - [1mExecutionEngine ready (symbol=NQ)[0m
+[32m2026-02-23 08:34:17.991[0m | [33m[1mWARNING [0m | [36msrc.level_builder[0m:[36m__post_init__[0m:[36m66[0m - [33m[1m8am candle range=50.75pts exceeds max=20.0pts — NO-TRADE day[0m
+[32m2026-02-23 08:34:17.991[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m556[0m - [1mUsing shared TradingSuite for symbol=ES[0m
+[32m2026-02-23 08:34:17.992[0m | [33m[1mWARNING [0m | [36msrc.bot_runner[0m:[36m_build_today_levels[0m:[36m378[0m - [33m[1mNo-trade day declared for 2026-02-23[0m
+[32m2026-02-23 08:34:17.993[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m597[0m - [1mConnected to TopstepX | account='50KTC-V2-527200-68043726 (id=19158041)' | symbol='ES' | contract='CON.F.US.EP.H26'[0m
+[32m2026-02-23 08:34:17.993[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m_build_today_levels[0m:[36m382[0m - [1mLevels built for 2026-02-23: anchor=AnchorCandle(timestamp=Timestamp('2026-02-23 07:00:00-0600', tz='America/Chicago'), open=24903.75, high=24938.0, low=24887.25, close=24917.0, volume=2574.0, mid=24912.62, range_pts=50.75, is_valid=False)[0m
+[32m2026-02-23 08:34:18.082[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36mrun[0m:[36m166[0m - [1mEntering main event loop — monitoring for signals...[0m
+[32m2026-02-23 08:34:18.093[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 10:34:00-06:00[0m
+[32m2026-02-23 08:34:18.183[0m | [33m[1mWARNING [0m | [36msrc.bot_runner[0m:[36mrun[0m:[36m184[0m - [33m[1mKill switch active (no_trade_day). Halting.[0m
+[32m2026-02-23 08:34:18.197[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 10:45:00-06:00[0m
+[32m2026-02-23 08:34:18.286[0m | [33m[1mWARNING [0m | [36msrc.execution_engine[0m:[36mflatten_all[0m:[36m489[0m - [33m[1mflatten_all called (manual)[0m
+[32m2026-02-23 08:34:18.488[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:00:00-06:00[0m
+[32m2026-02-23 08:34:18.599[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:15:00-06:00[0m
+[32m2026-02-23 08:34:18.792[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:30:00-06:00[0m
+[32m2026-02-23 08:34:18.987[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 11:45:00-06:00[0m
+[32m2026-02-23 08:34:19.286[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:00:00-06:00[0m
+[32m2026-02-23 08:34:19.593[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:15:00-06:00[0m
+[32m2026-02-23 08:34:19.991[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:30:00-06:00[0m
+[32m2026-02-23 08:34:20.286[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 12:45:00-06:00[0m
+[32m2026-02-23 08:34:20.693[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:00:00-06:00[0m
+[32m2026-02-23 08:34:21.084[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:15:00-06:00[0m
+[32m2026-02-23 08:34:21.384[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:30:00-06:00[0m
+[32m2026-02-23 08:34:21.603[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 13:45:00-06:00[0m
+[32m2026-02-23 08:34:21.902[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:00:00-06:00[0m
+[32m2026-02-23 08:34:22.090[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:15:00-06:00[0m
+[32m2026-02-23 08:34:22.484[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:30:00-06:00[0m
+[32m2026-02-23 08:34:22.987[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 14:45:00-06:00[0m
+[32m2026-02-23 08:34:23.487[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:00:00-06:00[0m
+[32m2026-02-23 08:34:24.202[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:15:00-06:00[0m
+[32m2026-02-23 08:34:25.692[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:30:00-06:00[0m
+[32m2026-02-23 08:34:26.592[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-20 15:45:00-06:00[0m
+[32m2026-02-23 08:34:27.189[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:00:00-06:00[0m
+[32m2026-02-23 08:34:27.685[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:15:00-06:00[0m
+[32m2026-02-23 08:34:28.097[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:30:00-06:00[0m
+[32m2026-02-23 08:34:28.482[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 17:45:00-06:00[0m
+[32m2026-02-23 08:34:28.697[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:00:00-06:00[0m
+[32m2026-02-23 08:34:28.997[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:15:00-06:00[0m
+[32m2026-02-23 08:34:29.297[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:30:00-06:00[0m
+[32m2026-02-23 08:34:29.601[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 18:45:00-06:00[0m
+[32m2026-02-23 08:34:29.985[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:00:00-06:00[0m
+[32m2026-02-23 08:34:30.289[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:15:00-06:00[0m
+[32m2026-02-23 08:34:30.687[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:30:00-06:00[0m
+[32m2026-02-23 08:34:30.998[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 19:45:00-06:00[0m
+[32m2026-02-23 08:34:31.502[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:00:00-06:00[0m
+[32m2026-02-23 08:34:31.897[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:15:00-06:00[0m
+[32m2026-02-23 08:34:32.384[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:30:00-06:00[0m
+[32m2026-02-23 08:34:32.692[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 20:45:00-06:00[0m
+[32m2026-02-23 08:34:32.999[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:00:00-06:00[0m
+[32m2026-02-23 08:34:33.583[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36m_run_one[0m:[36m266[0m - [31m[1mBotRunner NQ crashed: 
+Traceback (most recent call last):
+  File "C:\Apps\trading_bot\src\multi_bot_runner.py", line 263, in _run_one
+    runner.run()
+  File "C:\Apps\trading_bot\src\bot_runner.py", line 192, in run
+    self._end_of_day()
+  File "C:\Apps\trading_bot\src\bot_runner.py", line 416, in _end_of_day
+    self._engine.stop()
+  File "C:\Apps\trading_bot\src\execution_engine.py", line 437, in stop
+    ).result(timeout=15)
+      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 458, in result
+    raise TimeoutError()
+TimeoutError
+[0m
+[32m2026-02-23 08:34:33.586[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:15:00-06:00[0m
+[32m2026-02-23 08:34:34.199[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:30:00-06:00[0m
+[32m2026-02-23 08:34:34.889[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 21:45:00-06:00[0m
+[32m2026-02-23 08:34:35.200[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:00:00-06:00[0m
+[32m2026-02-23 08:34:35.591[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:15:00-06:00[0m
+[32m2026-02-23 08:34:36.192[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:30:00-06:00[0m
+[32m2026-02-23 08:34:36.787[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 22:45:00-06:00[0m
+[32m2026-02-23 08:34:37.392[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:00:00-06:00[0m
+[32m2026-02-23 08:34:37.899[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:15:00-06:00[0m
+[32m2026-02-23 08:34:38.497[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:30:00-06:00[0m
+[32m2026-02-23 08:34:39.003[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-22 23:45:00-06:00[0m
+[32m2026-02-23 08:34:39.407[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:00:00-06:00[0m
+[32m2026-02-23 08:34:39.882[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:15:00-06:00[0m
+[32m2026-02-23 08:34:40.290[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:30:00-06:00[0m
+[32m2026-02-23 08:34:40.613[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 00:45:00-06:00[0m
+[32m2026-02-23 08:34:41.001[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:00:00-06:00[0m
+[32m2026-02-23 08:34:41.304[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:15:00-06:00[0m
+[32m2026-02-23 08:34:41.499[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:30:00-06:00[0m
+[32m2026-02-23 08:34:41.697[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 01:45:00-06:00[0m
+[32m2026-02-23 08:34:41.915[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:00:00-06:00[0m
+[32m2026-02-23 08:34:42.131[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:15:00-06:00[0m
+[32m2026-02-23 08:34:42.392[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:30:00-06:00[0m
+[32m2026-02-23 08:34:43.088[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 02:45:00-06:00[0m
+[32m2026-02-23 08:34:43.619[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:00:00-06:00[0m
+[32m2026-02-23 08:34:44.286[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:15:00-06:00[0m
+[32m2026-02-23 08:34:45.206[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:30:00-06:00[0m
+[32m2026-02-23 08:34:45.999[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 03:45:00-06:00[0m
+[32m2026-02-23 08:34:46.414[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:00:00-06:00[0m
+[32m2026-02-23 08:34:46.900[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:15:00-06:00[0m
+[32m2026-02-23 08:34:47.307[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:30:00-06:00[0m
+[32m2026-02-23 08:34:47.810[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 04:45:00-06:00[0m
+[32m2026-02-23 08:34:48.397[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:00:00-06:00[0m
+[32m2026-02-23 08:34:49.089[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:15:00-06:00[0m
+[32m2026-02-23 08:34:49.388[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:30:00-06:00[0m
+[32m2026-02-23 08:34:49.564[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 05:45:00-06:00[0m
+[32m2026-02-23 08:34:49.711[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:00:00-06:00[0m
+[32m2026-02-23 08:34:49.855[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:15:00-06:00[0m
+[32m2026-02-23 08:34:49.996[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:30:00-06:00[0m
+[32m2026-02-23 08:34:50.189[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 06:45:00-06:00[0m
+[32m2026-02-23 08:34:50.503[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:00:00-06:00[0m
+[32m2026-02-23 08:34:50.644[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:15:00-06:00[0m
+[32m2026-02-23 08:34:50.920[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:30:00-06:00[0m
+[32m2026-02-23 08:34:51.220[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 07:45:00-06:00[0m
+[32m2026-02-23 08:34:51.526[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:00:00-06:00[0m
+[32m2026-02-23 08:34:52.010[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:15:00-06:00[0m
+[32m2026-02-23 08:34:52.600[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:30:00-06:00[0m
+[32m2026-02-23 08:34:53.381[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 08:45:00-06:00[0m
+[32m2026-02-23 08:34:53.997[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:00:00-06:00[0m
+[32m2026-02-23 08:34:54.987[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:15:00-06:00[0m
+[32m2026-02-23 08:34:56.398[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:30:00-06:00[0m
+[32m2026-02-23 08:34:57.400[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 09:45:00-06:00[0m
+[32m2026-02-23 08:34:58.102[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 10:00:00-06:00[0m
+[32m2026-02-23 08:34:58.623[0m | [34m[1mDEBUG   [0m | [36msrc.execution_engine[0m:[36m_emit_15m[0m:[36m199[0m - [34m[1m15m bar emitted: 2026-02-23 10:15:00-06:00[0m
+[32m2026-02-23 08:34:58.792[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m622[0m - [1mSeeded bar store with 1380 historical 1m bars[0m
+[32m2026-02-23 08:34:58.793[0m | [1mINFO    [0m | [36msrc.execution_engine[0m:[36m_async_start[0m:[36m629[0m - [1mExecutionEngine ready (symbol=ES)[0m
+[32m2026-02-23 08:34:58.884[0m | [1mINFO    [0m | [36msrc.level_builder[0m:[36mbuild[0m:[36m265[0m - [1m2026-02-23 — anchor=6895.75/6886.00 mid=6890.88 range=9.75pts | 5 untested highs, 6 untested lows (+OR extremes)[0m
+[32m2026-02-23 08:34:58.886[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36m_build_today_levels[0m:[36m382[0m - [1mLevels built for 2026-02-23: anchor=AnchorCandle(timestamp=Timestamp('2026-02-23 07:00:00-0600', tz='America/Chicago'), open=6889.5, high=6895.75, low=6886.0, close=6891.75, volume=5422.0, mid=6890.88, range_pts=9.75, is_valid=True)[0m
+[32m2026-02-23 08:34:58.887[0m | [1mINFO    [0m | [36msrc.bot_runner[0m:[36mrun[0m:[36m166[0m - [1mEntering main event loop — monitoring for signals...[0m
+[32m2026-02-23 08:34:59.098[0m | [33m[1mWARNING [0m | [36msrc.execution_engine[0m:[36m_async_flatten[0m:[36m805[0m - [33m[1mFlattening all positions (manual)[0m
+[32m2026-02-23 08:34:59.129[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6867.50 from asia at 2026-02-22 23:15:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.185[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6869.00 from asia at 2026-02-22 21:30:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.185[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6873.75 from asia at 2026-02-23 00:30:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.186[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6881.75 from asia at 2026-02-23 02:30:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.187[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6882.75 from asia at 2026-02-23 02:00:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.187[0m | [34m[1mDEBUG   [0m | [36msrc.level_builder[0m:[36mmark_tested[0m:[36m129[0m - [34m[1mLevel PriceLevel(low=6886.00 from or_range at 2026-02-23 07:00:00-06:00) TESTED by close=6856.75[0m
+[32m2026-02-23 08:34:59.192[0m | [1mINFO    [0m | [36msrc.news_filter[0m:[36m_load_news_dates[0m:[36m83[0m - [1mNewsFilter: loaded 165 high-impact dates from high_impact_dates.csv[0m
+⚠️ No open position found for CON.F.US.ENQ.H26

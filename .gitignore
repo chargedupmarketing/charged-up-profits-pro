@@ -1,0 +1,13 @@
+.env
+*.pyc
+__pycache__/
+data/historical/
+data/live_cache/
+data/audit.db
+data/*.csv
+data/*.parquet
+data/ml_filter_model.pkl
+*.egg-info/
+dist/
+build/
+.pytest_cache/

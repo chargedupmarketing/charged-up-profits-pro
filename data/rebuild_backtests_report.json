@@ -1,0 +1,13 @@
+{
+  "run_at": "2026-02-24T02:52:44.613254",
+  "symbols": [
+    "ES",
+    "NQ"
+  ],
+  "start": "2024-01-01",
+  "end": "2025-12-31",
+  "outputs": {
+    "ES": "C:\\Apps\\AI\\trading_bot\\data\\backtest_ES_20240101_20251231.csv",
+    "NQ": "C:\\Apps\\AI\\trading_bot\\data\\backtest_NQ_20240101_20251231.csv"
+  }
+}

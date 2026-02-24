@@ -1,0 +1,267 @@
+instrument:
+  symbol: ES
+  micro_symbol: MES
+  point_value: 50
+  topstepx_symbol: ''
+  databento_dataset: GLBX.MDP3
+symbols:
+  ES:
+    enabled: true
+    symbol: ES
+    micro_symbol: MES
+    point_value: 50
+    topstepx_symbol: ''
+    databento_dataset: GLBX.MDP3
+    enabled_setups:
+    - BREAK_RETEST
+    - BOUNCE
+    ml_bypass: true
+    risk_overrides:
+      stop_loss_points_min: 5
+      stop_loss_points_max: 10
+      take_profit_points_min: 15
+      take_profit_points_max: 35
+      max_reward_risk_ratio: 4.5
+    levels_overrides:
+      max_8am_range_points: 20
+      min_8am_range_points: 5
+    regime_overrides:
+      banned_days_of_week:
+      - 4
+  NQ:
+    enabled: true
+    primary: true
+    symbol: NQ
+    micro_symbol: MNQ
+    point_value: 20
+    topstepx_symbol: ''
+    databento_dataset: GLBX.MDP3
+    enabled_setups:
+    - BREAK_RETEST
+    - BOUNCE
+    ml_bypass: false
+    risk_overrides:
+      stop_loss_points_min: 20
+      stop_loss_points_max: 40
+      take_profit_points_min: 60
+      take_profit_points_max: 150
+      min_reward_risk_ratio: 3.0
+      max_reward_risk_ratio: 4.0
+      stop_or_fraction: 0.4
+    levels_overrides:
+      max_8am_range_points: 80
+      min_8am_range_points: 20
+      level_tolerance_points: 2.5
+    setups_overrides:
+      break_retest:
+        min_break_points: 20
+        retest_tolerance_points: 6
+        max_bars_since_break: 10
+        min_break_body_ratio: 0.45
+        or_extreme_break_buffer: 4.0
+      rejection:
+        fails_required: 1
+        fails_required_1m: 2
+      bounce:
+        touch_tolerance_mult: 2.0
+    regime_overrides:
+      atr_high_vol_multiplier: 2.8
+    trend_overrides:
+      macro_trend_hard_block: true
+  MNQ:
+    enabled: true
+    symbol: MNQ
+    micro_symbol: MNQ
+    point_value: 2
+    topstepx_symbol: ''
+    databento_dataset: GLBX.MDP3
+    data_source_symbol: NQ
+    enabled_setups:
+    - BREAK_RETEST
+    - BOUNCE
+    ml_bypass: false
+    risk_overrides:
+      stop_loss_points_min: 20
+      stop_loss_points_max: 40
+      take_profit_points_min: 60
+      take_profit_points_max: 150
+      min_reward_risk_ratio: 3.0
+      max_reward_risk_ratio: 4.0
+      stop_or_fraction: 0.4
+    levels_overrides:
+      max_8am_range_points: 80
+      min_8am_range_points: 20
+      level_tolerance_points: 2.5
+    setups_overrides:
+      break_retest:
+        min_break_points: 20
+        retest_tolerance_points: 6
+        max_bars_since_break: 10
+        min_break_body_ratio: 0.45
+        or_extreme_break_buffer: 4.0
+      rejection:
+        fails_required: 1
+        fails_required_1m: 2
+      bounce:
+        touch_tolerance_mult: 2.0
+    regime_overrides:
+      atr_high_vol_multiplier: 2.8
+    trend_overrides:
+      macro_trend_hard_block: true
+    backtest_overrides:
+      commission_per_side: 0.85
+session:
+  timezone: America/New_York
+  anchor_candle_time: 08:00
+  anchor_candle_tf: 15min
+  execution_start: 09:00
+  execution_end: '14:30'
+  pre_market_scan_start: 07:45
+levels:
+  max_8am_range_points: 20
+  min_8am_range_points: 5
+  lookback_sessions: 5
+  level_tolerance_points: 0.5
+  untested_definition: no_full_close_beyond
+setups:
+  break_retest:
+    min_break_points: 5
+    break_lookback_bars: 5
+    retest_tolerance_points: 1.5
+    confirmation_candles: 1
+    max_bars_since_break: 12
+    min_break_body_ratio: 0.5
+    signal_cooldown_minutes: 10
+    use_or_extremes: true
+    or_extreme_break_buffer: 1.0
+    enabled: true
+  rejection:
+    fails_required: 1
+    fails_required_1m: 3
+    check_timeframe: 5min
+    signal_cooldown_minutes: 10
+    include_or_levels: true
+    enabled: true
+  bounce:
+    reclaim_candles: 1
+    touch_tolerance_mult: 1.5
+    reclaim_tolerance_mult: 0.5
+    check_timeframe: 1min
+    signal_cooldown_minutes: 10
+    include_or_levels: true
+    enabled: true
+  sweep_reverse:
+    min_body_ratio: 0.45
+    signal_cooldown_minutes: 10
+    include_or_levels: true
+    enabled: true
+trend_filter:
+  enabled: true
+  ema_period: 20
+  macro_ema_period: 50
+  ema_timeframe: 15min
+  macro_trend_hard_block: false
+regime_filter:
+  enabled: true
+  atr_period: 14
+  atr_rolling_period: 20
+  atr_high_vol_multiplier: 2.2
+  banned_days_of_week:
+  - 4
+  news_filter_enabled: true
+  news_filter_file: data/high_impact_dates.csv
+risk:
+  max_daily_loss_dollars: -1200
+  max_trades_per_day: 7
+  stop_loss_points_min: 5
+  stop_loss_points_max: 10
+  take_profit_points_min: 15
+  take_profit_points_max: 35
+  min_reward_risk_ratio: 3.0
+  max_reward_risk_ratio: 4.5
+  initial_contracts: 1
+  scale_up_after_days: 30
+  vol_sizing_enabled: true
+  vol_sizing_atr_threshold: 1.5
+  vol_sizing_reduce_by: 1
+  use_atr_stops: true
+  atr_stop_multiplier: 0.5
+  use_or_range_stops: true
+  stop_or_fraction: 0.5
+  partial_tp_enabled: true
+  partial_tp_ratio: 1.0
+  partial_tp_contracts_pct: 0.5
+funded_account:
+  account_size: 50000
+  safety_buffer_dollars: 500
+  scale_contracts_at_profit:
+  - profit_threshold: 2000
+    contracts: 2
+  - profit_threshold: 5000
+    contracts: 3
+  - profit_threshold: 10000
+    contracts: 4
+notifications:
+  enabled: true
+  from_email: ChargedUp Profits Bot
+  to_email: ''
+  gmail_from: ''
+  gmail_app_password: ''
+  resend_api_key: ''
+  notify_on_entry: true
+  notify_on_exit: true
+  notify_on_kill_switch: true
+  notify_on_error: true
+execution:
+  order_timeout_seconds: 90
+  limit_to_market_on_timeout: true
+  reconcile_interval_seconds: 30
+  connection_timeout_seconds: 60
+  use_bracket_orders: true
+  paper_mode: false
+  shadow_mode: false
+  max_fill_slippage_ticks: 4
+  connection_watchdog_seconds: 60
+backtest:
+  commission_per_side: 5.0
+  slippage_per_side_points: 0.25
+  train_months: 18
+  test_months: 6
+  walk_forward_rolls: 3
+  embargo_days: 10
+ml:
+  enabled: true
+  min_probability_threshold: 0.62
+  triple_barrier_tp_points: 20
+  triple_barrier_sl_points: 8
+  triple_barrier_time_limit_bars: 60
+  model_retrain_days: 30
+  ev_gating_enabled: true
+  ev_min_threshold: 0.02
+  ev_fallback_threshold: 0.5
+  min_oos_trades_per_year: 60
+  calibration: isotonic
+  label_method: realized_R_binary
+  cv_purge_horizon_bars: 60
+  cv_embargo_bars: 10
+  schema_version: '1.1'
+  symbol_ev_overrides:
+    NQ:
+      ev_min_threshold: 0.03
+      ev_fallback_threshold: 0.52
+    ES:
+      ev_min_threshold: 0.02
+      ev_fallback_threshold: 0.5
+portfolio_risk:
+  portfolio_daily_loss_limit: -2000.0
+  max_correlated_positions: 1
+  consecutive_loss_halt: 4
+secrets:
+  use_env_vars: true
+monitoring:
+  db_url: sqlite:///trading_bot/data/audit.db
+  alert_webhook_url: ''
+  alert_on_kill_switch: true
+  alert_on_daily_loss_limit: true
+  alert_on_trade_fill: true
+  dashboard_port: 8501

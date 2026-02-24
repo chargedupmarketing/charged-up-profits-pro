@@ -1,0 +1,27 @@
+C:\Apps\AI\trading_bot\src\continuous_learner.py:262: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self._state["started_at"] = datetime.utcnow().isoformat()
+2026-02-23 22:29:43.617 | INFO     | __main__:__init__:265 - ContinuousLearner started — symbols=['ES', 'NQ']
+C:\Apps\AI\trading_bot\src\continuous_learner.py:273: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self._state["last_check"] = datetime.utcnow().isoformat()
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+2026-02-23 22:29:44.063 | INFO     | monitoring.audit_log:__init__:167 - AuditLogger initialised — db=sqlite:///trading_bot/data/audit.db
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+C:\Apps\AI\trading_bot\src\continuous_learner.py:139: FutureWarning: In a future version of pandas, parsing datetimes with mixed time zones will raise an error unless `utc=True`. Please specify `utc=True` to opt in to the new behaviour and silence this warning. To create a `Series` with mixed offsets and `object` dtype, please use `apply` and `datetime.datetime.strptime`
+  df["entry_ts"] = pd.to_datetime(df["entry_ts"], errors="coerce")
+2026-02-23 22:29:44.110 | INFO     | monitoring.audit_log:__init__:167 - AuditLogger initialised — db=sqlite:///trading_bot/data/audit.db

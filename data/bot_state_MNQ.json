@@ -1,0 +1,26 @@
+{
+  "symbol": "MNQ",
+  "running": true,
+  "pid": 9332,
+  "paper_mode": true,
+  "date": "2026-02-22",
+  "today_pnl": 0,
+  "today_trades": 0,
+  "today_wins": 0,
+  "today_losses": 0,
+  "today_win_rate": 0.0,
+  "open_position": false,
+  "kill_switch_active": false,
+  "kill_switch_reason": "none",
+  "levels_built": false,
+  "account": {
+    "account": "",
+    "balance": 0.0,
+    "daily_pnl": 0.0,
+    "daily_remaining": 2000.0,
+    "drawdown_remaining": 3000.0,
+    "safe": true,
+    "contracts": 1
+  },
+  "last_update": "2026-02-22T16:46:05.208172"
+}

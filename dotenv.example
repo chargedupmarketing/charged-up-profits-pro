@@ -1,0 +1,46 @@
+# =============================================================================
+# RP Profits Trading Bot — Environment Variables
+# Rename this file to .env and fill in your values.  Never commit .env to git.
+#   PowerShell:  Copy-Item dotenv.example .env
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Historical data — Databento
+# Used ONLY by data/download_historical.py to download backtest data.
+# Get your key at: https://databento.com/portal/keys
+# -----------------------------------------------------------------------------
+DATABENTO_API_KEY=your_databento_api_key_here
+
+# -----------------------------------------------------------------------------
+# Live execution — TopstepX (ProjectX platform)
+#
+# Get your API key from the TopstepX dashboard:
+#   https://dashboard.topstepx.com → Account → API Access
+#
+# PROJECT_X_USERNAME    Your TopstepX login email / username
+# PROJECT_X_API_KEY     The API key shown on the TopstepX API Access page
+# PROJECT_X_ACCOUNT_NAME
+#   (optional) The exact account name shown on your TopstepX dashboard.
+#   Examples: "Combine 50K", "APEX-1234567", "Funded-78901"
+#   If left blank the SDK automatically selects your first active account.
+#
+# API endpoints — leave as-is unless TopstepX support tells you otherwise
+# PROJECTX_API_URL      REST base URL    (default: https://api.topstepx.com/api)
+# PROJECTX_REALTIME_URL WebSocket base   (default: wss://api.topstepx.com)
+# -----------------------------------------------------------------------------
+PROJECT_X_USERNAME=your_topstepx_email@example.com
+PROJECT_X_API_KEY=your_topstepx_api_key_here
+PROJECT_X_ACCOUNT_NAME=
+
+# Optional overrides — uncomment only if instructed by TopstepX support
+#PROJECTX_API_URL=https://api.topstepx.com/api
+#PROJECTX_REALTIME_URL=wss://api.topstepx.com
+#PROJECTX_TIMEZONE=America/Chicago
+#PROJECTX_TIMEOUT_SECONDS=30
+
+# -----------------------------------------------------------------------------
+# Alerting (optional)
+# Paste a Discord or Telegram webhook URL to receive trade alerts.
+# Leave blank to disable.
+# -----------------------------------------------------------------------------
+ALERT_WEBHOOK_URL=

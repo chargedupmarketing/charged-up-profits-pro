@@ -1,0 +1,141 @@
+{
+  "last_retrain": {
+    "ES": "2026-02-23T21:19:36.948686",
+    "NQ": "2026-02-23T21:19:37.583383"
+  },
+  "last_trade_count": {},
+  "running": true,
+  "log": [
+    {
+      "ts": "2026-02-23T21:19:31.457424",
+      "level": "INFO",
+      "msg": "Trigger: 247 new trades for ES (threshold=25)"
+    },
+    {
+      "ts": "2026-02-23T21:19:31.457424",
+      "level": "INFO",
+      "msg": "=== Starting retrain cycle ==="
+    },
+    {
+      "ts": "2026-02-23T21:19:36.012652",
+      "level": "INFO",
+      "msg": "--- Processing ES ---"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.030902",
+      "level": "INFO",
+      "msg": "  Training ES_BREAK_RETEST..."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.803417",
+      "level": "INFO",
+      "msg": "  ES_BREAK_RETEST: trained \u2014 AUC=0.642 (304 samples, LGBM=NO)"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.846436",
+      "level": "INFO",
+      "msg": "  ES_BREAK_RETEST: gates ALL PASSED (6/6)"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.852439",
+      "level": "INFO",
+      "msg": "  ES_BREAK_RETEST: PENDING approval \u2014 saved to ml_filter_ES_BREAK_RETEST_20260223_211936.pkl"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.852439",
+      "level": "INFO",
+      "msg": "  Training ES_REJECTION..."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.875437",
+      "level": "ERROR",
+      "msg": "  ES_REJECTION: training error \u2014 Not enough trades for setup_type=REJECTION: 0 rows after filtering."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.889512",
+      "level": "INFO",
+      "msg": "  Training ES_BOUNCE..."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.914336",
+      "level": "WARN",
+      "msg": "  ES_BOUNCE: only 12 samples after filtering \u2014 skipping"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.914336",
+      "level": "INFO",
+      "msg": "  Training ES_SWEEP_REVERSE..."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.938172",
+      "level": "ERROR",
+      "msg": "  ES_SWEEP_REVERSE: training error \u2014 Not enough trades for setup_type=SWEEP_REVERSE: 0 rows after filtering."
+    },
+    {
+      "ts": "2026-02-23T21:19:36.949699",
+      "level": "INFO",
+      "msg": "--- Processing NQ ---"
+    },
+    {
+      "ts": "2026-02-23T21:19:36.968847",
+      "level": "INFO",
+      "msg": "  Training NQ_BREAK_RETEST..."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.437806",
+      "level": "INFO",
+      "msg": "  NQ_BREAK_RETEST: trained \u2014 AUC=0.644 (436 samples, LGBM=NO)"
+    },
+    {
+      "ts": "2026-02-23T21:19:37.487641",
+      "level": "INFO",
+      "msg": "  NQ_BREAK_RETEST: gates ALL PASSED (6/6)"
+    },
+    {
+      "ts": "2026-02-23T21:19:37.493659",
+      "level": "INFO",
+      "msg": "  NQ_BREAK_RETEST: PENDING approval \u2014 saved to ml_filter_NQ_BREAK_RETEST_20260223_211937.pkl"
+    },
+    {
+      "ts": "2026-02-23T21:19:37.493659",
+      "level": "INFO",
+      "msg": "  Training NQ_REJECTION..."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.515840",
+      "level": "ERROR",
+      "msg": "  NQ_REJECTION: training error \u2014 Not enough trades for setup_type=REJECTION: 0 rows after filtering."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.526728",
+      "level": "INFO",
+      "msg": "  Training NQ_BOUNCE..."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.551060",
+      "level": "WARN",
+      "msg": "  NQ_BOUNCE: only 18 samples after filtering \u2014 skipping"
+    },
+    {
+      "ts": "2026-02-23T21:19:37.551060",
+      "level": "INFO",
+      "msg": "  Training NQ_SWEEP_REVERSE..."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.573474",
+      "level": "ERROR",
+      "msg": "  NQ_SWEEP_REVERSE: training error \u2014 Not enough trades for setup_type=SWEEP_REVERSE: 0 rows after filtering."
+    },
+    {
+      "ts": "2026-02-23T21:19:37.584383",
+      "level": "INFO",
+      "msg": "=== Retrain cycle complete in 6s ==="
+    }
+  ],
+  "started_at": "2026-02-24T03:29:43.616522",
+  "symbols": [
+    "ES",
+    "NQ"
+  ],
+  "last_check": "2026-02-24T03:29:43.625946"
+}

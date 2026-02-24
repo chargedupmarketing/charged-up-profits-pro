@@ -1,0 +1,384 @@
+# config/feature_schema.yaml
+#
+# Canonical feature schema for the ChargedUp Profits Bot ML filter.
+#
+# AUTHORITATIVE SOURCE: this file defines the complete, ordered list of
+# features.  feature_builder.py MUST output all required features.
+# ml_filter.py MUST fail at training time if any required feature is missing.
+# A SHA-256 hash of the sorted required-feature names is stored in every
+# saved model's dataset_manifest.json.
+#
+# When you add a new feature:
+#   1. Add it here (bump schema_version)
+#   2. Add computation to feature_builder.py
+#   3. Re-run: python scripts/rebuild_backtests.py
+#   4. Re-run: python scripts/build_dataset.py
+#   5. Re-run: python scripts/train_models.py
+#
+# schema_version must be bumped whenever the required-feature list changes.
+
+schema_version: "1.1"
+label_horizon_bars: 60      # triple-barrier time limit (minutes)
+total_features: 57          # 55 original + 2 regime additions
+
+features:
+
+  # ─── Group 1: Opening Range (5) ────────────────────────────────────────
+  - name: range_pts
+    dtype: float
+    group: opening_range
+    required: true
+    description: "8am candle high - low in raw points"
+
+  - name: range_norm
+    dtype: float
+    group: opening_range
+    required: true
+    description: "range_pts / ATR(14) on 15m — normalised by volatility"
+
+  - name: price_vs_mid_norm
+    dtype: float
+    group: opening_range
+    required: true
+    description: "(price - OR_mid) / range_pts — position within opening range"
+
+  - name: price_above_mid
+    dtype: int
+    group: opening_range
+    required: true
+    description: "1 if price > OR midpoint"
+
+  - name: or_range_vs_5day_avg
+    dtype: float
+    group: opening_range
+    required: true
+    description: "today OR range / 5-day avg range — tight OR signals breakout day"
+
+  # ─── Group 2: Level Proximity & Quality (8) ────────────────────────────
+  - name: level_dist_pts
+    dtype: float
+    group: level
+    required: true
+    description: "distance from current price to the key level in points"
+
+  - name: level_is_high
+    dtype: int
+    group: level
+    required: true
+    description: "1 if level is a resistance/high, 0 if support/low"
+
+  - name: level_origin_asia
+    dtype: int
+    group: level
+    required: true
+    description: "1 if level formed in Asian overnight session"
+
+  - name: level_origin_london
+    dtype: int
+    group: level
+    required: true
+    description: "1 if level formed in London pre-market session"
+
+  - name: level_freshness_bars
+    dtype: float
+    group: level
+    required: true
+    description: "minutes since the level was formed (recency)"
+
+  - name: level_test_count
+    dtype: int
+    group: level
+    required: true
+    description: "times price approached within 0.5 pts without breaking the level"
+
+  - name: active_highs_count
+    dtype: int
+    group: level
+    required: true
+    description: "number of active resistance levels today"
+
+  - name: active_lows_count
+    dtype: int
+    group: level
+    required: true
+    description: "number of active support levels today"
+
+  # ─── Group 3: Volume Context (3) ───────────────────────────────────────
+  - name: volume_ratio
+    dtype: float
+    group: volume
+    required: true
+    description: "current 1m bar volume / 20-bar median volume"
+
+  - name: volume_above_median
+    dtype: int
+    group: volume
+    required: true
+    description: "1 if current volume > 20-bar median"
+
+  - name: volume_trend_5
+    dtype: float
+    group: volume
+    required: true
+    description: "linear slope of volume over last 5 bars (rising = positive)"
+
+  # ─── Group 4: Trend & Momentum (8) ─────────────────────────────────────
+  - name: price_vs_ema20
+    dtype: float
+    group: trend
+    required: true
+    description: "distance in pts from 20-period EMA on 15m"
+
+  - name: price_above_ema20
+    dtype: int
+    group: trend
+    required: true
+    description: "1 if price > EMA-20"
+
+  - name: atr_15m_14
+    dtype: float
+    group: trend
+    required: true
+    description: "ATR(14) on 15m chart in raw points"
+
+  - name: momentum_3bar_norm
+    dtype: float
+    group: trend
+    required: true
+    description: "3-bar close change on 15m / ATR — normalised momentum"
+
+  - name: return_5bar_1m
+    dtype: float
+    group: trend
+    required: true
+    description: "close change over last 5 bars on 1m"
+
+  - name: daily_ema50_distance
+    dtype: float
+    group: trend
+    required: true
+    description: "distance in pts from 50-period EMA on 15m (macro trend)"
+
+  - name: price_above_ema50
+    dtype: int
+    group: trend
+    required: true
+    description: "1 if price > EMA-50 (macro trend direction)"
+
+  # ─── Group 5: Temporal (5) ─────────────────────────────────────────────
+  - name: hour
+    dtype: int
+    group: temporal
+    required: true
+    description: "hour of day (9–14)"
+
+  - name: minute_of_day
+    dtype: int
+    group: temporal
+    required: true
+    description: "hour * 60 + minute (continuous)"
+
+  - name: day_of_week
+    dtype: int
+    group: temporal
+    required: true
+    description: "0=Monday … 3=Thursday (4=Friday is banned by rule)"
+
+  - name: mins_since_exec_open
+    dtype: float
+    group: temporal
+    required: true
+    description: "minutes elapsed since 9:00 AM execution window open"
+
+  - name: bars_in_exec_window
+    dtype: int
+    group: temporal
+    required: true
+    description: "1m bars elapsed since 9:00 AM"
+
+  # ─── Group 6: Signal-Specific (7) ──────────────────────────────────────
+  - name: setup_break_retest
+    dtype: int
+    group: signal
+    required: true
+    description: "1 if setup type is BREAK_RETEST"
+
+  - name: setup_rejection
+    dtype: int
+    group: signal
+    required: true
+    description: "1 if setup type is REJECTION"
+
+  - name: setup_bounce
+    dtype: int
+    group: signal
+    required: true
+    description: "1 if setup type is BOUNCE"
+
+  - name: direction_long
+    dtype: int
+    group: signal
+    required: true
+    description: "1 if trade direction is LONG"
+
+  - name: stop_dist_pts
+    dtype: float
+    group: signal
+    required: true
+    description: "distance in points from entry to stop loss"
+
+  - name: target_dist_pts
+    dtype: float
+    group: signal
+    required: true
+    description: "distance in points from entry to take profit target"
+
+  - name: rr_ratio
+    dtype: float
+    group: signal
+    required: true
+    description: "target_dist_pts / stop_dist_pts"
+
+  # ─── Group 7: Candle Quality & ATR Regime (5) ──────────────────────────
+  - name: candle_body_ratio
+    dtype: float
+    group: candle_quality
+    required: true
+    description: "body size / total bar range (0=doji, 1=marubozu)"
+
+  - name: atr_regime
+    dtype: float
+    group: candle_quality
+    required: true
+    description: "current ATR(14) / 20-bar rolling avg ATR (1.0=normal, 2.0=twice normal)"
+
+  - name: spread_proxy
+    dtype: float
+    group: candle_quality
+    required: true
+    description: "(bar high - bar low) / bar close — intraday liquidity proxy"
+
+  - name: prev_bar_momentum
+    dtype: float
+    group: candle_quality
+    required: true
+    description: "last 1m bar close - previous close (direction/acceleration)"
+
+  - name: prev_bar_bullish
+    dtype: int
+    group: candle_quality
+    required: true
+    description: "1 if last 1m bar closed up"
+
+  # ─── Group 8: Break Strength (4) ───────────────────────────────────────
+  - name: or_range_vs_atr
+    dtype: float
+    group: break_strength
+    required: true
+    description: "OR range / ATR(14) — today's OR relative to average volatility"
+
+  - name: break_excursion_pts
+    dtype: float
+    group: break_strength
+    required: true
+    description: "max pts price travelled beyond break level before retest (BREAK_RETEST only)"
+
+  - name: closes_beyond_level
+    dtype: int
+    group: break_strength
+    required: true
+    description: "count of 1m closes on the right side of the break level"
+
+  - name: time_to_retest_bars
+    dtype: int
+    group: break_strength
+    required: true
+    description: "1m bars from break bar to current retest bar"
+
+  # ─── Group 9: Direction-Aligned Derived (3) ────────────────────────────
+  - name: momentum_aligned
+    dtype: float
+    group: derived
+    required: true
+    description: "momentum_3bar_15m * direction_sign — positive = momentum agrees"
+
+  - name: ema50_aligned
+    dtype: int
+    group: derived
+    required: true
+    description: "1 if EMA-50 macro trend matches trade direction"
+
+  - name: is_retest_quick
+    dtype: int
+    group: derived
+    required: true
+    description: "1 if time_to_retest_bars <= 8 (fast retests are cleaner)"
+
+  # ─── Group 10: Market Context (3) ──────────────────────────────────────
+  - name: gap_size_norm
+    dtype: float
+    group: market_context
+    required: true
+    description: "(today_open - prev_close) / ATR — gap day signal"
+
+  - name: session_phase
+    dtype: int
+    group: market_context
+    required: true
+    description: "0=open drive (9-10am), 1=mid-morning (10-11:30am), 2=afternoon"
+
+  # ─── Group 11: VWAP & Prior Day Context (6) ────────────────────────────
+  - name: vwap_distance_norm
+    dtype: float
+    group: vwap_context
+    required: true
+    description: "(price - intraday_VWAP) / ATR"
+
+  - name: price_above_vwap
+    dtype: int
+    group: vwap_context
+    required: true
+    description: "1 if price > intraday VWAP"
+
+  - name: price_vs_prev_high_norm
+    dtype: float
+    group: vwap_context
+    required: true
+    description: "(price - yesterday_high) / ATR"
+
+  - name: price_vs_prev_low_norm
+    dtype: float
+    group: vwap_context
+    required: true
+    description: "(price - yesterday_low) / ATR"
+
+  - name: above_prev_high
+    dtype: int
+    group: vwap_context
+    required: true
+    description: "1 if price > yesterday's high"
+
+  - name: below_prev_low
+    dtype: int
+    group: vwap_context
+    required: true
+    description: "1 if price < yesterday's low"
+
+  # ─── Group 12: Regime Intelligence — NEW (Section 7) (2) ───────────────
+  - name: efficiency_ratio
+    dtype: float
+    group: regime
+    required: true
+    description: >
+      Kaufman Efficiency Ratio on last 20 bars of 15m chart.
+      |net_price_change| / sum(|bar_changes|).
+      ~1.0 = trending cleanly, ~0.0 = pure chop. Affects setup-type suitability.
+
+  - name: vol_state
+    dtype: float
+    group: regime
+    required: true
+    description: >
+      ATR(14) percentile rank vs last 60-day ATR history (0.0–1.0).
+      High vol_state (>0.7) = expansion regime; low (<0.3) = contraction.
+      Used with atr_regime to distinguish regime type.

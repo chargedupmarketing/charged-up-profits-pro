@@ -1,0 +1,93 @@
+{
+  "run_at": "2026-02-24T02:54:15.176228",
+  "symbols": [
+    "ES",
+    "NQ"
+  ],
+  "setup_types": [
+    "BREAK_RETEST",
+    "REJECTION",
+    "BOUNCE",
+    "SWEEP_REVERSE"
+  ],
+  "labelled_file": "data/labelled_trades.csv",
+  "activated": false,
+  "results": {
+    "ES": {
+      "combined": {
+        "auc": 0.5104,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.0943204613535404,
+          "avg_R_loss": -1.0920793103448279,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_ES_manifest.json"
+      },
+      "BREAK_RETEST": {
+        "auc": 0.4939,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.1402640309382743,
+          "avg_R_loss": -1.099731623931624,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_ES_BREAK_RETEST_manifest.json"
+      },
+      "SWEEP_REVERSE": {
+        "auc": 0.5768,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.2465340440525545,
+          "avg_R_loss": -1.1016112903225803,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_ES_SWEEP_REVERSE_manifest.json"
+      }
+    },
+    "NQ": {
+      "combined": {
+        "auc": 0.5148,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.0846212925244023,
+          "avg_R_loss": -1.0942817073170732,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_NQ_manifest.json"
+      },
+      "BREAK_RETEST": {
+        "auc": 0.5558,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.2002970890583606,
+          "avg_R_loss": -1.0981915094339623,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_NQ_BREAK_RETEST_manifest.json"
+      },
+      "SWEEP_REVERSE": {
+        "auc": 0.4526,
+        "schema_hash": "sha256:f1239d11ce0f1eb9",
+        "calibration": "isotonic",
+        "n_folds": 5,
+        "ev_policy": {
+          "avg_R_win": 2.1773307884929163,
+          "avg_R_loss": -1.0990046153846154,
+          "ev_min_threshold": 0.02
+        },
+        "manifest_path": "C:\\Apps\\AI\\trading_bot\\data\\models\\active\\ml_filter_NQ_SWEEP_REVERSE_manifest.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "active": {
+    "ES_BREAK_RETEST": {
+      "model_file": "ml_filter_ES_BREAK_RETEST_20260223_211936.pkl",
+      "comparison_file": "comparison_ES_BREAK_RETEST_20260223_211936.json",
+      "timestamp": "20260223_211936",
+      "battery_passed": true,
+      "new_auc": 0.6425,
+      "new_win_rate_sim": 0.8392857142857143,
+      "status": "active",
+      "approved_at": "2026-02-24T02:37:23.593370"
+    },
+    "NQ_BREAK_RETEST": {
+      "model_file": "ml_filter_NQ_BREAK_RETEST_20260223_211937.pkl",
+      "comparison_file": "comparison_NQ_BREAK_RETEST_20260223_211937.json",
+      "timestamp": "20260223_211937",
+      "battery_passed": true,
+      "new_auc": 0.6438,
+      "new_win_rate_sim": 0.8888888888888888,
+      "status": "active",
+      "approved_at": "2026-02-24T02:37:28.167858"
+    }
+  },
+  "versions": [
+    {
+      "key": "ES_BREAK_RETEST",
+      "timestamp": "20260223_211936",
+      "model_file": "ml_filter_ES_BREAK_RETEST_20260223_211936.pkl",
+      "status": "deployed",
+      "approved_at": "2026-02-24T02:37:23.593370"
+    },
+    {
+      "key": "NQ_BREAK_RETEST",
+      "timestamp": "20260223_211937",
+      "model_file": "ml_filter_NQ_BREAK_RETEST_20260223_211937.pkl",
+      "status": "deployed",
+      "approved_at": "2026-02-24T02:37:28.167858"
+    }
+  ],
+  "pending": {}
+}

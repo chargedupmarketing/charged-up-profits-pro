@@ -1,0 +1,50 @@
+{
+  "symbol": "NQ",
+  "running": false,
+  "pid": 11204,
+  "paper_mode": false,
+  "date": "2026-02-24",
+  "today_pnl": 0,
+  "today_trades": 0,
+  "today_wins": 0,
+  "today_losses": 0,
+  "today_win_rate": 0.0,
+  "open_position": false,
+  "kill_switch_active": false,
+  "kill_switch_reason": "none",
+  "levels_built": true,
+  "premarket": {
+    "date": "2026-02-24",
+    "symbol": "NQ",
+    "news_day": false,
+    "day_type": "NORMAL",
+    "gap_direction": "FLAT",
+    "gap_size_atr": 0.35,
+    "overnight_range_atr": 3.93,
+    "vol_regime": "HIGH",
+    "atr_ratio": 1.8,
+    "current_atr": 68.57,
+    "level_quality": "GREAT",
+    "level_count": 13,
+    "session_outlook": "CAUTION",
+    "session_notes": [
+      "\ud83d\udfe1 CAUTION: Abnormal conditions \u2014 trade with reduced size",
+      "\u26a1 High volatility: ATR is 1.8\u00d7 its 20-day avg \u2014 sizing will be reduced",
+      "\u27a1\ufe0f Flat open (gap=-24.2pts, 0.35\u00d7 ATR)",
+      "\ud83c\udf19 Wide overnight range: 269.8pts (3.9\u00d7 ATR) \u2014 choppy overnight",
+      "\u2705 13 price levels \u2014 excellent setup"
+    ],
+    "learner_retrain": "RUNNING (pid=7180)",
+    "timestamp": "2026-02-24T07:50:07.759579"
+  },
+  "account": {
+    "account": "",
+    "balance": 0.0,
+    "daily_pnl": 0.0,
+    "daily_remaining": 2000.0,
+    "drawdown_remaining": 3000.0,
+    "safe": true,
+    "contracts": 1
+  },
+  "last_update": "2026-02-24T08:04:01.151010"
+}
